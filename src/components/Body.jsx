@@ -12,9 +12,8 @@ class Body extends Component{
 
     componentDidMount(){
         // axios api call
-        axios.get('ECDznjYQgQOdrpTUmpijrWGk2yKQqupd8ooigjyE').then(function(response){
+        axios.get('ECDznjYQgQOdrpTUmpijrWGk2yKQqupd8ooigjyE')
             response.render('index.html', {name: null,NASAData: response.data})
-        })
     }
 
     // componentDidUpdate(prevProps, prevState){
