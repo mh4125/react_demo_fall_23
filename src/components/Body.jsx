@@ -12,12 +12,8 @@ class Body extends Component{
 
     componentDidMount(){
         // axios api call
-        axios.get('https://random-data-api.com/api/coffee/random_coffee')
-        .then((response) => {
-            this.setState({coffee: response.data})
-        })
-        .catch(function (error) {
-            console.log(error);
+        axios.get('ECDznjYQgQOdrpTUmpijrWGk2yKQqupd8ooigjyE').then(function(response){
+            response.render('index.html', {name: null,NASAData: response.data})
         })
     }
 
